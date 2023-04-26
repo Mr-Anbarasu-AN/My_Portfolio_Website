@@ -1,0 +1,52 @@
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.project-list li {
+  flex: 0 0 auto;
+  margin-right: 20px;
+  text-align: center;
+  width: 30%;
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+
+.project-list li img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+.project-list li p {
+  margin-top: 1em;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+
+.project-list li:last-child {
+  margin-right: 0;
+}
+
+.project-image {
+  width: 250px !important;
+  height: 250px !important;
+}
+
