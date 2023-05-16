@@ -23,7 +23,7 @@ function SocialLinks() {
       </a>
      
 
-      <a href="https://www.linkedin.com/in/anbarasu-an-a93500258/">
+      <a href="https://www.linkedin.com/in/anbarasu-an/">
       <img src={Linkedin} alt="Profile" style={{ width: '40px', height: '40px' }} />
       </a>
      
