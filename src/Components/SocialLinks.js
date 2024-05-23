@@ -4,38 +4,37 @@ import Mail from "./Images/Mail.webp";
 import Github from "./Images/Github1.png";
 import Instagram from "./Images/Instagram.webp";
 import Linkedin from "./Images/Linkedin.png";
-import Twitter from "./Images/Twitter.png";
+import Twitter from "./Images/x.png";
 
 function SocialLinks() {
   return (
     <>
-    <br/>
-    <div>
+    <div className="sociallink">
       
       
       <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfmrfTTSlXGZFzXfxJJNXhGCdVdknMMpsDNBTpcKwlpQgJGNnBjDSwRWcbLkqNXwtrztXB">
-      <img src={Mail} alt="Profile" style={{ width: '40px', height: '40px' }} />
-      </a>
-     
-
-      <a href="https://github.com/Mr-Anbarasu-AN">
-      <img src={Github} alt="Profile" style={{ width: '40px', height: '40px' }} />
-      </a>
-     
-
-      <a href="https://www.linkedin.com/in/anbarasu-an/">
-      <img src={Linkedin} alt="Profile" style={{ width: '40px', height: '40px' }} />
+      <img src={Mail} alt="Link-Img" style={{ width: '40px', height: '40px' }} />
       </a>
      
 
       <a href="https://www.instagram.com/mr.emperor_of_love/">
-      <img src={Instagram} alt="Profile" style={{ width: '40px', height: '40px' }} />
+      <img src={Instagram} alt="Link-Img" style={{ width: '40px', height: '40px' }} />
       </a>
       
 
-      <a href="https://twitter.com/MrEmperoroflove/">
-      <img src={Twitter} alt="Profile" style={{ width: '40px', height: '40px' }} />
+      <a href="https://www.linkedin.com/in/anbarasu-an/">
+      <img src={Linkedin} alt="Link-Img" style={{ width: '40px', height: '40px' }} />
       </a>
+     
+
+      <a href="https://twitter.com/MrEmperoroflove/">
+      <img src={Twitter} alt="Link-Img" style={{ width: '40px', height: '40px' }} />
+      </a>
+
+      <a href="https://github.com/Mr-Anbarasu-AN">
+      <img src={Github} alt="Link-Img" style={{ width: '40px', height: '40px' }} />
+      </a>
+     
     </div></>
   );
 }

@@ -5,21 +5,21 @@ import Home from "./Components/Home";
 import About from "./Components/About";
 import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
-import Navbar from "./Components/Navbar";
-import Footer from "./Components/Footer";
+import Resume from "./Components/Resume";
+import Findme from "./Components/Findme";
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/resume" element={<Resume/>}/>
           <Route path="/contact" element={<Contact />} />
+          <Route path="/findme" element={<Findme />} />
         </Routes>
-        <Footer />
       </div>
     </Router>
   );
