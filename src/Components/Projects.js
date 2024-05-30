@@ -1,47 +1,98 @@
-import React, { useEffect } from 'react';
-import './Projects.css';
+
+// fetch project
+import React from "react";
+import "./Projects.css";
 import Navbar from './Navbar';
 import Footer from './Footer';
 
-const Projects = () => {
-  useEffect(() => {
-    const projectImagesContainer = document.querySelector('.project-images');
+const projects = [
+  { url: "https://re-captcha.netlify.app/", title: "Re-Captcha" },
+  { url: "https://birthday-gift-boxes-generator.netlify.app/", title: "Whip-Up Gift Box" },
+  { url: "https://serverless-function-for-send-mail.netlify.app/", title: "Email" },
+  { url: "https://react-for-card-flip.netlify.app/", title: "React Card Flip" },
+  { url: "https://weather-report-using-html.netlify.app/", title: "Weather Report" },
+  { url: "https://speech-2-text-converter.netlify.app/", title: "Speech = Text" },
+  { url: "https://anbarasu-number-guessing-game.netlify.app/", title: "Number Guessing Game" },
+  { url: "https://qr-code-generator-in-react.netlify.app/", title: "QR Code Generator" },
+];
 
-    const handleAnimationIteration = () => {
-      projectImagesContainer.style.animation = 'none';
-      void projectImagesContainer.offsetWidth; // Trigger reflow
-      projectImagesContainer.style.animation = 'scrollRightToLeft 5s linear infinite'; // Adjust the duration as needed
-    };
-
-    projectImagesContainer.addEventListener('animationiteration', handleAnimationIteration);
-
-    return () => {
-      projectImagesContainer.removeEventListener('animationiteration', handleAnimationIteration);
-    };
-  }, []);
+function Projects() {
+  const handleProjectClick = (url) => {
+    window.open(url, "_blank");
+  };
 
   return (
     <>
     <Navbar/>
-    <div className="projects-container">
-      <div className="project-images">
-        <img src="project1.jpg" alt="Project 1" />
-        <img src="project2.jpg" alt="Project 2" />
-        <img src="project3.jpg" alt="Project 3" />
-        {/* Add more project images as needed */}
-      </div>
+    <div className="Project-body">
+      <h1 className="Project" style={{ marginTop: 0, padding: 10 }}>My Projects</h1>
+      <ul className="project-list">
+        {projects.map(project => (
+          <li key={project.url} onClick={() => handleProjectClick(project.url)}>
+            <div
+              className="project-image"
+              style={{ backgroundImage: `url(${project.url}/screenshot.png)` }}
+            ></div>
+            <div className="iframe-container">
+              <iframe
+                src={project.url}
+                title={project.title}
+                className="project-iframe"
+                sandbox="allow-scripts allow-same-origin"
+              ></iframe>
+            </div>
+            <p>{project.title}</p>
+          </li>
+        ))}
+      </ul>
     </div>
     <Footer/>
     </>
   );
-};
+}
 
 export default Projects;
 
 
+/*
 
 
+import React from "react";
+import "./Projects.css";
 
+const projects = [
+  { url: "https://re-captcha.netlify.app/", title: "Re-Captcha" },
+  { url: "https://birthday-gift-boxes-generator.netlify.app/", title: "Whip-Up Gift Box" },
+  { url: "https://react-for-card-flip.netlify.app/", title: "React Card Flip" },
+  { url: "https://weather-report-using-html.netlify.app/", title: "Weather Report" },
+  { url: "https://speech-2-text-converter.netlify.app/", title: "Speech = Text" },
+  { url: "https://anbarasu-number-guessing-game.netlify.app/", title: "Number Guessing Game" },
+];
+
+function Projects() {
+  return (
+    <div className="Project-body">
+      <h1 className="Project" style={{ marginTop: 0, padding: 10 }}>My Projects</h1>
+      <ul className="project-list">
+        {projects.map(project => (
+          <li key={project.url}>
+            <div className="iframe-container">
+              <iframe
+                src={project.url}
+                title={project.title}
+                className="project-iframe"
+                sandbox="allow-scripts allow-same-origin"
+              ></iframe>
+            </div>
+            <p>{project.title}</p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+export default Projects;
 
 
 
@@ -58,31 +109,37 @@ function Projects() {
       <ul className="project-list">
       
         <li>
-          <a href="https://github.com/Mr-Anbarasu-AN/Fullstack_Project.git">
+          <a href="https://re-captcha.netlify.app/">
           <img className="project-image" src={Github} alt="Profile" />
           </a>
-          <p>Fullstack Project</p>
+          <p>Re-Captcha</p>
         </li>
         <li>
-          <a href="https://github.com/Mr-Anbarasu-AN/Wish-Up_Gift_Boxes.git">
+          <a href="https://birthday-gift-boxes-generator.netlify.app/">
           <img className="project-image" src={Github} alt="Profile" />
           </a>
           <p>Whip-Up Gift Box</p>
         </li>
         <li>
-          <a href="https://github.com/Mr-Anbarasu-AN/Weather_Report.git">
+          <a href="https://react-for-card-flip.netlify.app/">
+          <img className="project-image" src={Github} alt="Profile" />
+          </a>
+          <p>React Card Flip</p>
+        </li>
+        <li>
+          <a href="https://weather-report-using-html.netlify.app/">
           <img className="project-image" src={Github} alt="Profile" />
           </a>
           <p>Weather Report</p>
         </li>
         <li>
-          <a href="https://github.com/Mr-Anbarasu-AN/React_Card_Flip.git">
+          <a href="https://speech-2-text-converter.netlify.app/">
             <img className="project-image" src={Github} alt="Profile" />
           </a>
-          <p>React Card Flip</p>
+          <p>Speech = Text</p>
         </li>
         <li>
-          <a href="https://github.com/Mr-Anbarasu-AN/Number_Guessing_Game.git">
+          <a href="https://anbarasu-number-guessing-game.netlify.app/">
             <img className="project-image" src={Github} alt="Profile" />
           </a>
           <p>Number Guessing Game</p>

@@ -11,7 +11,7 @@ function Skill() {
       <h1 id="skill-icon">Professional Skillset</h1>
       </center>
     <Container fluid className="skill-section">
-      <Row>
+      <Row className="skillrow">
         <Col className="tech-icons"  >
           <DiJava /> {/* Java */}
           <p>Java</p>
@@ -46,7 +46,7 @@ function Skill() {
         </Col>
         <Col className="tech-icons" styl>
           <SiUnrealengine /> {/* Unity Game Engine */}
-          <p>Unreal Game Engine</p>
+          <p>Unreal Engine</p>
         </Col>
         <Col className="tech-icons" >
           <SiPostgresql /> {/* PostgreSQL */}

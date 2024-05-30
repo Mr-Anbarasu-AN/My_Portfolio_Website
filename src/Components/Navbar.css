@@ -30,6 +30,9 @@ nav a {
   font-weight: bold;
   padding: 10px;
   border-radius: 5px;
+  display: inline-block;
+  margin: 0px 10px 0px 10px;
+  text-align: center;
 }
 
 nav a:hover {
@@ -38,7 +41,15 @@ nav a:hover {
 }
 
 /* Media query for smaller screens */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
+  nav li {
+    margin: 0 auto;
+  }
+}
+
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 590px) {
   .menu-button {
     display: block; /* Show on smaller screens */
   }

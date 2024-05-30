@@ -53,12 +53,12 @@ button[type="submit"]:hover {
   background-color: #3e8e41;
 }
 
-/* Optional styling for checkbox */
+
 input[type="checkbox"] {
   margin-right: 5px;
 }
 
-/* Optional styling for toggle switch */
+
 .toggle-switch {
   position: relative;
   display: inline-block;
@@ -115,12 +115,10 @@ h6{
   font-size: clamp(0.85rem , 0.5vw, 0.5rem);
 }
 
-/* Media query for smaller screens */
+
 @media only screen and (min-width: 768px) {
-  .contact-first,
-.contact-form,
 .contact-end {
-    width: 48%; /* Adjust the width of containers based on your design preference */
+    width: 80%; 
   }
 }
 
@@ -128,24 +126,14 @@ img.ProfileGirl{
   width: 100px;
 }
 
-.body1 {
+.contactbody {
   background-color: rgb(202, 220, 224);
   display: flex;
-  justify-content: space-around; /* Adjust this based on your design preference */
-  align-items: flex-start; /* Adjust this based on your design preference */
-  flex-wrap: wrap; /* Allow containers to wrap to the next line if needed */
+  justify-content: space-around; 
+  align-items: flex-start; 
+  flex-wrap: wrap; 
 }
 
-.contact-first,
-.contact-form,
-.contact-end {
-  width: 30%; /* Adjust the width of containers based on your design preference */
-  margin: 10px; /* Adjust the margin between containers based on your design preference */
-}
-
-.contact-first{
-  padding: 0px;
-}
 
 .contact-form {
   max-width: 400px;

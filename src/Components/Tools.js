@@ -16,7 +16,7 @@ function Tools() {
       </center>
     <Container fluid className="tools-section">
       
-      <Row>
+      <Row className="toolsrow">
       <Col xs={6} md={4} lg={3} className="tools-icons" >
           <SiMicrosoftoffice /> {/* MS Office */}
           <p   className="tools"   >MS Office</p>

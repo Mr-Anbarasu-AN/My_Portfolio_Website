@@ -4,7 +4,7 @@ div[classname='sociallink'] {
   justify-content: center;
 }
 
-a {
+.sociallink a {
   display: inline-block;
   margin: 0px 10px 0px 10px;
   text-align: center;
@@ -23,7 +23,7 @@ img:hover[alt="Link-Img"] {
 }
 
 @media only screen and (max-width: 768px) {
-  div {
+  div[classname='sociallink'] {
     flex-direction: column;
     align-items: center;
   }

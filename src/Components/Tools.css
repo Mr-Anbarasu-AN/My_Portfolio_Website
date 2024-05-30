@@ -3,7 +3,7 @@
   }
   
   /* Create a flex container for the row */
-  .row {
+  .toolsrow {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around; /* Adjust the alignment as needed */
@@ -25,7 +25,7 @@ h1[id="tools-icon"]{
   }
   
   .tools-icons p.tools {
-    margin-top: 10px;
+    margin-top: 0px;
     font-size: 15px;
   }
   
@@ -85,7 +85,7 @@ h1[id="tools-icon"]{
   }
   
   /* Create a flex container for the row */
-  .row {
+  .toolsrow {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;

@@ -2,7 +2,7 @@
   padding: 20px;
 }
 
-.row {
+.skillrow {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -25,7 +25,7 @@ h1[id="skill-icon"]{
 }
 
 .tech-icons p {
-  margin-top: 10px;
+  margin-top: 0px;
   font-size: 15px;
 }
 
@@ -55,13 +55,13 @@ h1[id="skill-icon"]{
   z-index: -1;
 }
 
-/* Media query for small screens */
+
 @media (max-width: 768px) {
   .skill-section {
     padding: 20px;
   }
   
-  .row {
+  .skillrow {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -76,15 +76,16 @@ h1[id="skill-icon"]{
   
   .tech-icons {
     text-align: center;
-    margin: 20px;
+    margin: 10px 1px 10px 1px;
     position: relative;
     font-size: 40px;
-    width: 60px;
     height: 60px;
+    width: 60px;
   }
+
   
   .tech-icons p {
-    margin-top: 1px;
-    font-size: 10px;
+    margin-top: 0px;
+    font-size: 8px;
   }
 }
