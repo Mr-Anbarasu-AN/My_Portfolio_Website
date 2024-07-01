@@ -8,7 +8,13 @@ function Footer() {
       <p id='footer'>Contact Me:</p>
       <ul>
         <li>Email: mr.emperoroflove@gmail.com</li>
+
+        {/* 
+
         <li>Phone: +91 6382797079</li>
+        
+        */}
+
       </ul>
       <p id='footer'>Connect with Social Networks</p>
       <SocialLinks />
